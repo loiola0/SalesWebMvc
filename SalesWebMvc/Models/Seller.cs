@@ -14,9 +14,9 @@ namespace SalesWebMvc.Models
           
           public string Email { get; set; }
 
-          public DateTime birthDate { get; set; }
+          public DateTime BirthDate { get; set; }
 
-          public double baseSalary { get; set; }
+          public double BaseSalary { get; set; }
 
           public Department Department { get; set; }
 
@@ -28,13 +28,13 @@ namespace SalesWebMvc.Models
 
         }
 
-        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Department department)
+        public Seller(int id, string name, string email, DateTime BirthDate, double baseSalary, Department department)
         {
             Id = id;
             Name = name;
             Email = email;
-            this.birthDate = birthDate;
-            this.baseSalary = baseSalary;
+            this.BirthDate = BirthDate;
+            this.BaseSalary = baseSalary;
             Department = department;
         }
 

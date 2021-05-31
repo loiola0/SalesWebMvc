@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Data;
+using SalesWebMvc.Services;
 
 
 namespace SalesWebMvc
@@ -42,7 +43,8 @@ namespace SalesWebMvc
                     builder.MigrationsAssembly("SalesWebMvc")));
 
             //registra o serviço no sistema de injeção de depedência da aplicação
-            services.AddScoped<SeedingService>(); 
+            services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
 
         }
 
